@@ -1,4 +1,4 @@
-# vuets-base
+# vuets-base: VueJS, Typescript, TSX, SASS
 
 ## Project setup
 ```

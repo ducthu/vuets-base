@@ -1,12 +1,11 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue, { CreateElement } from 'vue'
 import router from './router'
 import store from './store'
-
-Vue.config.productionTip = false
+import App from './app';
+import { VNode } from 'vue/types/umd';
 
 new Vue({
   router,
   store,
-  render: h => h(App)
-}).$mount('#app')
+  render: (h: CreateElement): VNode => h(App)
+}).$mount('#main');
